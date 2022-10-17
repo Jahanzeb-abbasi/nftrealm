@@ -598,7 +598,7 @@ footer ul {
 
 /* MEDIA QUERIES  */
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:768px) {
 
     .body-container {
         max-width: 85vw;
@@ -687,6 +687,19 @@ footer ul {
         padding: 1rem;
     }
 
+    .card-btn.active-btn {
+        display: none;
+    }
+
+    .card.active,
+    .card.fixed {
+        height: 450px;
+    }
+
+    .card-btn button {
+        display: none;
+    }
+
     /* CATEGORIES SECTION  */
 
     .categories {
@@ -763,5 +776,99 @@ footer ul {
     .popup h2 {
         font-size: 1rem;
         text-align: center;
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    
+    .logo {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .nav-link:hover {
+        font-size: 1.25rem;
+    }
+
+    .wallet-btn {
+        font-size: 1.2rem;
+        padding: 1.2rem 0;
+    }
+
+    .hero-1-left p {
+        margin: 1rem 0 0;
+        font-size: 1.3rem;
+    }
+
+    .learn-more-btn {
+        padding: 1rem 2rem;
+    }
+
+    .avatars {
+        margin-top: 3rem;
+    }
+
+    .avatars-para p{
+        margin: 0 0 0 0.5rem;
+    }
+
+    .categories-card {
+        text-align: center;
+    }
+
+    .categories-card-title {
+        font-size: 1.2rem;
+    }
+
+    .categories-card-desc {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .body-container {
+        max-width: 90vw;
+    }
+
+    .nav-container ul {
+        gap: 2rem;
+    }
+
+    .wallet-btn {
+        padding: 0.8rem 2rem;
+    }
+
+    .hero-1-left,
+    .hero-1-right{
+        flex: 1;
+    }
+
+    .hero-1-rightimg {
+        max-width: 100%;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .categories-card {
+        width: 30%;
+    }
+
+    footer {
+        padding: 2% 5%;
+    }
+}
+
+@media only screen and (max-width:1600px) {
+    .body-container {
+        max-width: 90vw;
+    }
+    
+    footer {
+        padding: 2% 10%;
     }
 }

@@ -1,14 +1,26 @@
 const cards = document.querySelectorAll('.card')
 const cardsbtn = document.querySelectorAll('.card-btn')
+let btns = document.querySelectorAll('.card-btn')
+let masterbtn = document.querySelector('.card-btn')
 
-for (const card of cards) {
-    card.addEventListener('click', () => {
-        card.classList.add('active')
-        card.addEventListener('mouseleave', () => {
-            card.classList.remove('active')
-        })
-    })
+if (window.innerWidth <= 768) {
+    let removeFixed = document.querySelectorAll('.card.fixed')
+    let activebtn = document.querySelector('.active-btn')
+    removeFixed[0].classList.remove('fixed')
+    activebtn.classList.remove('active-btn')
 }
+
+if (window.innerWidth > 768) {
+    for (const card of cards) {
+        card.addEventListener('click', () => {
+            card.classList.add('active')
+            card.addEventListener('mouseleave', () => {
+                card.classList.remove('active')
+            })
+        })
+    }
+}
+
 
 const links = document.querySelectorAll('a')
 const buttons = document.querySelectorAll('button')
@@ -31,3 +43,5 @@ for (let btn of buttons) {
         },3000)
     })
 }
+
+
