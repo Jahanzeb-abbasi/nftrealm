@@ -6,6 +6,6 @@ NFT-Realm, as the name suggests is a NFT Marketplace which can be used to Buy, S
 As of now, this static website has no functionality and is only for visual purposes.
 
 Tools Used:
--HTML
--CSS
--Javascript
+HTML
+CSS
+Javascript
